@@ -22,6 +22,7 @@
   "name": "Arauza Tech Security",
   "url": "https://arauzatech.com",
   "email": "hello@arauzatech.com",
+  "telephone": "+1-281-826-1372",
   "areaServed": { "@type": "City", "name": "Houston, TX" },
   "description": "Security checkups, fixes and monthly care for small-office Windows PCs and Microsoft 365.",
   "priceRange": "$$"
@@ -404,7 +405,8 @@
       <div>
         <h2>Book your checkup</h2>
         <p class="lead">Tell me a little about your office and I'll reply within one business day with available times.</p>
-        <p class="direct">Prefer email? <a href="mailto:hello@arauzatech.com">hello@arauzatech.com</a></p>
+        <p class="direct">Call or text <a href="tel:+12818261372">(281) 826-1372</a></p>
+        <p class="direct" style="margin-top: 8px">Or email <a href="mailto:hello@arauzatech.com">hello@arauzatech.com</a></p>
       </div>
       <form id="book-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
         <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" required></div>
@@ -430,7 +432,7 @@
 <footer>
   <div class="wrap">
     <span>&copy; <span id="yr">2026</span> Arauza Tech Security, Houston, Texas</span>
-    <a href="mailto:hello@arauzatech.com">hello@arauzatech.com</a>
+    <span><a href="tel:+12818261372">(281) 826-1372</a> &nbsp; <a href="mailto:hello@arauzatech.com">hello@arauzatech.com</a></span>
   </div>
 </footer>
 
@@ -468,7 +470,7 @@
         statusEl.textContent = 'Request sent. I\'ll reply within one business day.'; statusEl.classList.add('ok');
       })
       .catch(function () {
-        statusEl.textContent = 'The request didn\'t go through. Email hello@arauzatech.com instead.'; statusEl.classList.add('err');
+        statusEl.textContent = 'The request didn\'t go through. Call or text (281) 826-1372, or email hello@arauzatech.com.'; statusEl.classList.add('err');
       })
       .finally(function () { btn.disabled = false; btn.textContent = 'Request a checkup'; });
   });

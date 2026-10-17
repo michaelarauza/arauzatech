@@ -35,7 +35,6 @@ Until this step, the form opens the visitor's email app with their request fille
 ## 5. Finish
 - [ ] Open arauzatech.com on your phone and click every button
 - [ ] Scan the QR code on the flyer and confirm it opens the site
-- [ ] Add a business phone number when you have one (search the file for `hello@arauzatech.com` to find where contact details are)
 - [ ] Create a free **Google Business Profile** for Arauza Tech Security and add the website
 
 ## Editing later

@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Arauza Tech Security | Small Business Security Checkups in Houston</title>
-<meta name="description" content="A read-only security checkup for small offices in Houston. Every Windows PC and your Microsoft 365 get a letter grade and a plain-English fix list. $80 per computer.">
+<title>Arauza Tech Security | Security Checkup Apps for Windows PCs and Android Phones</title>
+<meta name="description" content="Arauza Tech Security makes security checkup apps for Windows PCs and Android phones. Scan your device, get a letter grade, and see exactly what to fix, in plain English.">
 <link rel="canonical" href="https://arauzatech.com/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Arauza Tech Security | Is your office actually secure?">
-<meta property="og:description" content="A graded security checkup for your office computers and Microsoft 365, with a plain-English fix list. $80 per PC.">
+<meta property="og:title" content="Arauza Tech Security | Is your device actually secure?">
+<meta property="og:description" content="Security checkup apps for Windows PCs and Android phones. Get a letter grade and a plain-English fix list.">
 <meta property="og:url" content="https://arauzatech.com/">
 <meta name="theme-color" content="#13294B">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 2l12 4.5v9c0 6.8-5.1 12.4-12 14.5C9.1 27.9 4 22.3 4 15.5v-9L16 2z' fill='%2313294B'/%3E%3Cpath d='M10.5 16l4 4 7-8' fill='none' stroke='%23F2A900' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
@@ -18,14 +18,16 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
+  "@type": "Organization",
   "name": "Arauza Tech Security",
   "url": "https://arauzatech.com",
   "email": "hello@arauzatech.com",
   "telephone": "+1-281-826-1372",
-  "areaServed": { "@type": "City", "name": "Houston, TX" },
-  "description": "Security checkups, fixes and monthly care for small-office Windows PCs and Microsoft 365.",
-  "priceRange": "$$"
+  "description": "Security checkup apps for Windows PCs and Android phones, plus security checkups for small offices and homes.",
+  "makesOffer": [
+    { "@type": "Offer", "price": "9.99", "priceCurrency": "USD", "itemOffered": { "@type": "SoftwareApplication", "name": "Arauza PC Security Checkup", "operatingSystem": "Windows 10, Windows 11", "applicationCategory": "SecurityApplication" } },
+    { "@type": "Offer", "price": "0", "priceCurrency": "USD", "itemOffered": { "@type": "SoftwareApplication", "name": "Arauza Phone Security Checkup", "operatingSystem": "Android", "applicationCategory": "SecurityApplication" } }
+  ]
 }
 </script>
 <style>
@@ -200,6 +202,27 @@
   .app-get small { color: #B9C4D6; font-size: 15px; }
   .app-get a.text-link { color: #fff; font-weight: 600; }
 
+  /* products */
+  .products-sec .lead { margin-bottom: 0; }
+  .products { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; margin-top: 44px; }
+  .product { border: 1px solid var(--line); border-radius: 14px; padding: 32px 30px; display: flex; flex-direction: column; gap: 14px; background: #fff; }
+  .product-head { display: flex; align-items: center; gap: 16px; }
+  .product-icon { width: 56px; height: 56px; flex: 0 0 56px; border-radius: 14px; background: var(--navy); display: grid; place-items: center; }
+  .product-kind { font-size: 14px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .6px; }
+  .product .amount { font-size: 44px; }
+  .product .per { margin-top: -6px; }
+  .product ul { list-style: none; padding: 0; margin: 4px 0 0; display: grid; gap: 8px; }
+  .product li { padding-left: 28px; position: relative; color: var(--ink); font-size: 16px; }
+  .product li::before { content: ""; position: absolute; left: 4px; top: 7px; width: 11px; height: 6px; border-left: 3px solid var(--amber); border-bottom: 3px solid var(--amber); transform: rotate(-45deg); }
+  .product .get { margin-top: auto; padding-top: 10px; display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+  .product .get .badge img { display: block; height: 58px; width: auto; }
+  .product .get .badge:focus-visible { outline: 3px solid var(--amber); outline-offset: 4px; border-radius: 6px; }
+  .product .get small { color: var(--muted); font-size: 14px; }
+  .services-intro { background: var(--mist); padding: 64px 0 0; }
+  .services-intro + section { background: var(--mist); padding-top: 28px; }
+  .eyebrow { font-size: 14px; font-weight: 600; color: var(--amber); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+  .services-intro .eyebrow { color: #8A5A00; }
+
   footer { background: var(--navy-deep); color: #B9C4D6; padding: 36px 0; font-size: 15px; }
   footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
   footer a { color: #DCE3EE; }
@@ -212,6 +235,7 @@
     .steps { grid-template-columns: 1fr; gap: 28px; }
     .prices { grid-template-columns: 1fr; }
     .app-sec .wrap { grid-template-columns: 1fr; gap: 32px; }
+    .products { grid-template-columns: 1fr; }
     .price + .price { border-left: 0; border-top: 1px solid var(--line); }
     .site-nav a:not(.btn) { display: none; }
     .site-header .wrap { padding-top: 14px; padding-bottom: 14px; }
@@ -236,12 +260,11 @@
       Arauza Tech Security
     </a>
     <nav class="site-nav" aria-label="Main">
-      <a href="#checks">What I check</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#pc-app">PC app</a>
+      <a href="#products">Products</a>
+      <a href="#services">Services</a>
       <a href="#about">About</a>
       <a href="#faq">FAQ</a>
-      <a class="btn btn-amber" href="#contact">Book a checkup</a>
+      <a class="btn btn-amber" href="#products">Get the apps</a>
     </nav>
   </div>
 </header>
@@ -250,16 +273,17 @@
   <section class="hero" id="top">
     <div class="wrap">
       <div>
-        <h1>Is your office actually secure?</h1>
-        <p class="lead">I check every computer in your office and your Microsoft 365 for the gaps attackers use most. You get a letter grade and a plain-English list of what to fix.</p>
+        <p class="eyebrow">Security software</p>
+        <h1>Is your device actually secure?</h1>
+        <p class="lead">Arauza Tech Security makes simple security checkup apps for Windows PCs and Android phones. Scan in under a minute, get a letter grade, and see exactly what to fix, in plain English.</p>
         <div class="hero-ctas">
-          <a class="btn btn-amber" href="#contact">Book a checkup, $80/PC</a>
-          <a class="btn btn-ghost" href="Sample_Report.pdf" target="_blank" rel="noopener">See a sample report (PDF)</a>
+          <a class="btn btn-amber" href="https://apps.microsoft.com/detail/9PM9SWVJMC2G?referrer=appbadge&amp;cid=arauzatech-site" target="_blank" rel="noopener">Get the PC app, $9.99</a>
+          <a class="btn btn-ghost" href="https://play.google.com/store/apps/developer?id=Arauza+Tech+Security" target="_blank" rel="noopener">Get the phone app, free</a>
         </div>
-        <p class="hero-note">Read-only. Nothing on your computers is changed.</p>
+        <p class="hero-note">Read-only. Our apps never change your settings.</p>
       </div>
 
-      <figure class="card" aria-label="Example of a checkup report" style="margin: 0">
+      <figure class="card" aria-label="Example of a scan result" style="margin: 0">
         <div class="card-top">
           <div class="dial start" id="dial">
             <svg viewBox="0 0 96 96" aria-hidden="true"><circle class="track" cx="48" cy="48" r="42" fill="none" stroke-width="10"/><circle class="arc" cx="48" cy="48" r="42" fill="none" stroke-width="10" stroke-linecap="round"/></svg>
@@ -276,20 +300,81 @@
           <li><span>Security updates</span><span class="pill p-warn">Needs attention</span></li>
           <li><span>Antivirus running</span><span class="pill p-pass">Pass</span></li>
         </ul>
-        <figcaption class="card-foot">From a sample report for a made-up dental office.</figcaption>
+        <figcaption class="card-foot">Sample result from Arauza PC Security Checkup.</figcaption>
       </figure>
     </div>
   </section>
 
   <div class="who">
     <div class="wrap">
-      <p>Built for law firms, CPAs, medical and dental offices, title companies, and any Houston office with 2 to 20 computers and no IT staff.</p>
+      <p>Built by an IT professional with 11+ years in enterprise security, for people and small offices who don't have an IT department.</p>
+    </div>
+  </div>
+
+  <section class="products-sec" id="products">
+    <div class="wrap">
+      <span id="pc-app"></span>
+      <h2>Our apps</h2>
+      <p class="lead">Each app checks the settings attackers rely on most, gives your device a letter grade, and walks you through every fix. No account, no jargon.</p>
+      <div class="products">
+        <article class="product">
+          <div class="product-head">
+            <div class="product-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#F2A900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div>
+            <div><div class="product-kind">Windows PC</div><h3>Arauza PC Security Checkup</h3></div>
+          </div>
+          <div class="amount">$9.99</div>
+          <div class="per">One-time purchase. Windows 10 and 11.</div>
+          <ul>
+            <li>43 security checks, from antivirus and updates to signs of malware</li>
+            <li>Plain-English fixes with a button that opens the right Windows setting</li>
+            <li>Read-only: it changes nothing and collects nothing</li>
+            <li>Save a printable report for your records or your IT helper</li>
+          </ul>
+          <div class="get">
+            <a class="badge" href="https://apps.microsoft.com/detail/9PM9SWVJMC2G?referrer=appbadge&amp;cid=arauzatech-site" target="_blank" rel="noopener">
+              <img src="https://get.microsoft.com/images/en-us%20dark.svg" alt="Get it from Microsoft" height="58"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';">
+              <span class="btn btn-navy" style="display:none">Get it from the Microsoft Store</span>
+            </a>
+          </div>
+        </article>
+        <article class="product">
+          <div class="product-head">
+            <div class="product-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#F2A900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div>
+            <div><div class="product-kind">Android phone</div><h3>Arauza Phone Security Checkup</h3></div>
+          </div>
+          <div class="amount">Free</div>
+          <div class="per">On Google Play.</div>
+          <ul>
+            <li>Checks your phone's key security settings in seconds</li>
+            <li>A letter grade and a plain-English list of what to fix</li>
+            <li>Opens the right setting so each fix takes a few taps</li>
+            <li>Read-only: it never changes your phone</li>
+          </ul>
+          <div class="get">
+            <a class="badge" href="https://play.google.com/store/apps/developer?id=Arauza+Tech+Security" target="_blank" rel="noopener">
+              <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" height="58" style="height:86px;margin:-14px 0 -14px -12px"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';">
+              <span class="btn btn-navy" style="display:none">Get it on Google Play</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="services-intro" id="services">
+    <div class="wrap">
+      <p class="eyebrow">Services</p>
+      <h2>Want us to check it for you?</h2>
+      <p class="lead">We run a full security checkup on every computer in your office or home, plus your Microsoft 365, then help you fix what we find. Remote anywhere, on-site in Houston.</p>
+      <div class="hero-ctas"><a class="btn btn-navy" href="#contact">Book a checkup, $80/PC</a><a class="btn" style="border-color:var(--navy);color:var(--navy)" href="Sample_Report.pdf" target="_blank" rel="noopener">See a sample report (PDF)</a></div>
     </div>
   </div>
 
   <section id="checks">
     <div class="wrap">
-      <h2>What I check</h2>
+      <h2>What the checkup covers</h2>
       <p class="lead">43 checks on every Windows PC, plus your Microsoft 365 account. Each one is explained in the report in plain words.</p>
       <div class="checks-grid">
         <div class="check">
@@ -327,35 +412,11 @@
     </div>
   </section>
 
-  <section class="app-sec" id="pc-app">
-    <div class="wrap">
-      <div>
-        <h2>Check your own PC in under a minute</h2>
-        <p>Not ready for a full office checkup? Arauza PC Security Checkup runs the same kind of checks on one Windows computer, gives it a letter grade, and tells you exactly what to fix.</p>
-        <ul class="app-list">
-          <li>43 security checks, from antivirus and updates to signs of malware</li>
-          <li>Plain-English fixes with a button that opens the right Windows setting</li>
-          <li>Read-only: it changes nothing and collects nothing</li>
-          <li>Save a printable report for your records or your IT helper</li>
-        </ul>
-      </div>
-      <div class="app-get">
-        <div class="app-price">$9.99</div>
-        <a class="badge" href="https://apps.microsoft.com/detail/9PM9SWVJMC2G?referrer=appbadge&amp;cid=arauzatech-site" target="_blank" rel="noopener">
-          <img src="https://get.microsoft.com/images/en-us%20dark.svg" alt="Get it from Microsoft" width="200"
-               onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';">
-          <span class="btn btn-amber" style="display:none">Get it from the Microsoft Store</span>
-        </a>
-        <small>One-time purchase. Windows 10 and 11.</small>
-        <a class="text-link" href="#contact">Found problems? I can fix them for you &rarr;</a>
-      </div>
-    </div>
-  </section>
 
   <section id="pricing">
     <div class="wrap">
       <h2>Pricing</h2>
-      <p class="lead">Start with the checkup. Fixes and monthly care are optional and quoted from your report.</p>
+      <p class="lead">Service pricing. Start with the checkup; fixes and monthly care are optional and quoted from your report.</p>
       <div class="prices">
         <div class="price featured">
           <h3>Office Security Checkup</h3>
@@ -402,7 +463,7 @@
       <div>
         <h2>Hi, I'm Michael Arauza</h2>
         <p class="lead">I spent more than 11 years in enterprise IT at large energy, financial and legal organizations, including JPMorgan Chase, Hess and Huntsman.</p>
-        <p class="lead">Big companies have whole teams checking this stuff. Small offices usually have nobody. I started Arauza Tech Security to bring the same basics to the offices that need them most, explained without jargon.</p>
+        <p class="lead">Big companies have whole teams checking this stuff. Most people and small offices have nobody. I started Arauza Tech Security to build simple apps that bring the same basics to everyone, explained without jargon, and to help hands-on when you need it.</p>
       </div>
       <ul class="creds">
         <li><b>Post Graduate Certificate in Cloud Computing</b><span>The University of Texas at Austin</span></li>
@@ -414,8 +475,16 @@
 
   <section class="faq-sec" id="faq">
     <div class="wrap">
-      <h2>Questions owners ask</h2>
+      <h2>Questions people ask</h2>
       <div class="faq">
+        <details>
+          <summary>Do the apps change my settings or collect my data?</summary>
+          <p>No. Both apps only read settings and show you the results. They never change anything on your device, and your results stay on your device.</p>
+        </details>
+        <details>
+          <summary>Is there a version for iPhone or Mac?</summary>
+          <p>Not yet. Today we have Arauza PC Security Checkup for Windows 10 and 11, and Arauza Phone Security Checkup for Android.</p>
+        </details>
         <details>
           <summary>Will the checkup change or break anything?</summary>
           <p>No. The checkup only reads settings and writes a report. Nothing is installed or changed. If you want fixes afterward, I quote them first and only start once you approve.</p>
@@ -447,14 +516,14 @@
   <section class="contact" id="contact">
     <div class="wrap">
       <div>
-        <h2>Book your checkup</h2>
-        <p class="lead">Tell me a little about your office and I'll reply within one business day with available times.</p>
+        <h2>Book a checkup or ask a question</h2>
+        <p class="lead">Questions about the apps, or ready for a checkup? Send a note and I'll reply within one business day.</p>
         <p class="direct">Call or text <a href="tel:+12818261372">(281) 826-1372</a></p>
         <p class="direct" style="margin-top: 8px">Or email <a href="mailto:hello@arauzatech.com">hello@arauzatech.com</a></p>
       </div>
       <form id="book-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
         <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" required></div>
-        <div class="field"><label for="f-biz">Business name</label><input id="f-biz" name="business" autocomplete="organization" required></div>
+        <div class="field"><label for="f-biz">Business name <span class="opt">(optional)</span></label><input id="f-biz" name="business" autocomplete="organization"></div>
         <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
         <div class="field"><label for="f-phone">Phone <span class="opt">(optional)</span></label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
         <div class="field full"><label for="f-pcs">How many computers?</label>
@@ -465,7 +534,7 @@
         <div class="field full"><label for="f-msg">Anything I should know? <span class="opt">(optional)</span></label><textarea id="f-msg" name="message"></textarea></div>
         <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
         <div class="form-actions">
-          <button class="btn btn-navy" type="submit">Request a checkup</button>
+          <button class="btn btn-navy" type="submit">Send</button>
           <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
         </div>
       </form>
@@ -495,13 +564,13 @@
     e.preventDefault();
     statusEl.className = 'form-status';
     var name = form.name.value.trim(), biz = form.business.value.trim(), email = form.email.value.trim();
-    if (!name || !biz || !email) { statusEl.textContent = 'Add your name, business name and email so I can reply.'; statusEl.classList.add('err'); return; }
+    if (!name || !email) { statusEl.textContent = 'Add your name and email so I can reply.'; statusEl.classList.add('err'); return; }
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { statusEl.textContent = 'Check the email address. It should look like name@business.com.'; statusEl.classList.add('err'); form.email.focus(); return; }
 
     if (form.action.indexOf('YOUR_FORM_ID') !== -1) {
       var body = 'Name: ' + name + '\nBusiness: ' + biz + '\nEmail: ' + email + '\nPhone: ' + form.phone.value +
                  '\nComputers: ' + form.computers.value + '\n\n' + form.message.value;
-      window.location.href = 'mailto:hello@arauzatech.com?subject=' + encodeURIComponent('Checkup request: ' + biz) + '&body=' + encodeURIComponent(body);
+      window.location.href = 'mailto:hello@arauzatech.com?subject=' + encodeURIComponent('Request from ' + (biz || name)) + '&body=' + encodeURIComponent(body);
       statusEl.textContent = 'Your email app should open with the request filled in. Press send there.';
       return;
     }
@@ -516,7 +585,7 @@
       .catch(function () {
         statusEl.textContent = 'The request didn\'t go through. Call or text (281) 826-1372, or email hello@arauzatech.com.'; statusEl.classList.add('err');
       })
-      .finally(function () { btn.disabled = false; btn.textContent = 'Request a checkup'; });
+      .finally(function () { btn.disabled = false; btn.textContent = 'Send'; });
   });
 </script>
 </body>

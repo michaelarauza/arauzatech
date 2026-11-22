@@ -204,8 +204,9 @@
 
   /* products */
   .products-sec .lead { margin-bottom: 0; }
-  .products { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; margin-top: 44px; }
-  .product { border: 1px solid var(--line); border-radius: 14px; padding: 32px 30px; display: flex; flex-direction: column; gap: 14px; background: #fff; }
+  .products { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 44px; }
+  @media (max-width: 1100px) and (min-width: 901px) { .products { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .product { border: 1px solid var(--line); border-radius: 14px; padding: 30px 26px; display: flex; flex-direction: column; gap: 14px; background: #fff; }
   .product-head { display: flex; align-items: center; gap: 16px; }
   .product-icon { width: 56px; height: 56px; flex: 0 0 56px; border-radius: 14px; background: var(--navy); display: grid; place-items: center; }
   .product-kind { font-size: 14px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .6px; }
@@ -274,7 +275,7 @@
       <div>
         <p class="eyebrow">Security software</p>
         <h1>Is your device actually secure?</h1>
-        <p class="lead">Arauza Tech Security makes simple security checkup apps for Windows PCs and Android phones. Scan in under a minute, get a letter grade, and see exactly what to fix, in plain English.</p>
+        <p class="lead">Arauza Tech Security makes simple security checkup apps for Windows PCs, Android phones and your home or office network. Scan in under a minute, get a letter grade, and see exactly what to fix, in plain English.</p>
         <div class="hero-ctas">
           <a class="btn btn-amber" href="https://apps.microsoft.com/detail/9PM9SWVJMC2G?referrer=appbadge&amp;cid=arauzatech-site" target="_blank" rel="noopener">Get the PC app, $9.99</a>
           <a class="btn btn-ghost" href="https://play.google.com/store/apps/details?id=com.arauzatech.phonecheckup&amp;referrer=utm_source%3Darauzatech-site" target="_blank" rel="noopener">Get the phone app, free</a>
@@ -325,6 +326,27 @@
           </ul>
           <div class="get">
             <a class="badge" href="https://apps.microsoft.com/detail/9PM9SWVJMC2G?referrer=appbadge&amp;cid=arauzatech-site" target="_blank" rel="noopener">
+              <img src="https://get.microsoft.com/images/en-us%20dark.svg" alt="Get it from Microsoft" height="58"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';">
+              <span class="btn btn-navy" style="display:none">Get it from the Microsoft Store</span>
+            </a>
+          </div>
+        </article>
+        <article class="product" id="network-app">
+          <div class="product-head">
+            <div class="product-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#F2A900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8.8a15 15 0 0 1 20 0"/><path d="M5 12.5a10 10 0 0 1 14 0"/><path d="M8.5 16.1a5 5 0 0 1 7 0"/><path d="M12 20h.01"/></svg></div>
+            <div><div class="product-kind">Wi-Fi and network</div><h3>Arauza Network Checkup</h3></div>
+          </div>
+          <div class="amount">$9.99</div>
+          <div class="per">One-time purchase. Windows 10 and 11.</div>
+          <ul>
+            <li>Checks your Wi-Fi security, router and DNS settings</li>
+            <li>Lists every device on your network so you can spot ones you don't know</li>
+            <li>Shows which logins your router has open, and ports apps opened to the internet</li>
+            <li>Read-only: never signs in to your router or changes a setting</li>
+          </ul>
+          <div class="get">
+            <a class="badge" href="https://apps.microsoft.com/detail/9N35FLMRXJZR?referrer=appbadge&amp;cid=arauzatech-site" target="_blank" rel="noopener">
               <img src="https://get.microsoft.com/images/en-us%20dark.svg" alt="Get it from Microsoft" height="58"
                    onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';">
               <span class="btn btn-navy" style="display:none">Get it from the Microsoft Store</span>

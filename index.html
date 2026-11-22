@@ -77,6 +77,9 @@
   .btn-navy:hover { background: var(--navy-deep); color: #fff; }
 
   /* header */
+  .promo { background: var(--amber); color: var(--navy); font-size: 15px; font-weight: 600; text-align: center; padding: 10px 16px; line-height: 1.4; }
+  .promo a { color: var(--navy); text-decoration: underline; text-underline-offset: 3px; }
+  .promo[hidden] { display: none; }
   .site-header { background: var(--navy); color: #fff; }
   .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 76px; flex-wrap: wrap; }
   .brand { display: flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; font-family: var(--display); font-weight: 800; font-size: 20px; letter-spacing: -0.2px; }
@@ -254,6 +257,7 @@
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
+<div class="promo" id="promo" hidden>Black Friday week: new PC or phone for the holidays? Check it before you use it, in under a minute. <a href="#products">See the apps</a></div>
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="#top" aria-label="Arauza Tech Security, home">
@@ -551,6 +555,10 @@
 
 <script>
   document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Holiday banner: shows only until Tuesday, December 1, 2026 (Houston time), then hides itself.
+  if (Date.now() < Date.parse('2026-12-01T00:00:00-06:00')) document.getElementById('promo').hidden = false;
+
 
   // One moment of motion: the grade dial fills once on load.
   requestAnimationFrame(function () {

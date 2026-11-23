@@ -1,0 +1,14 @@
+{
+  "name": "iPhone Security Checklist by Arauza Tech Security",
+  "short_name": "iPhone Check",
+  "description": "Free 16-point iPhone security checklist with a letter grade and plain-English fixes.",
+  "start_url": "/iphone-checklist.html?source=homescreen",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#13294B",
+  "theme_color": "#13294B",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

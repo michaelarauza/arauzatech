@@ -207,6 +207,12 @@
 
   /* products */
   .products-sec .lead { margin-bottom: 0; }
+  .promise { margin-top: 56px; padding: 32px 30px; background: var(--mist); border-radius: 14px; border-left: 4px solid var(--amber); }
+  .promise h3 { font-size: 26px; }
+  .promise .sub { color: var(--muted); margin-top: 6px; font-size: 16px; }
+  .promise-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 32px; margin-top: 18px; }
+  .promise-grid .check h4 { font-family: var(--display); color: var(--navy); font-size: 18px; margin: 0; }
+  @media (max-width: 900px) { .promise-grid { grid-template-columns: 1fr; } .promise { padding: 26px 20px; } }
   .products { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 44px; }
   @media (max-width: 1100px) and (min-width: 901px) { .products { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   .product { border: 1px solid var(--line); border-radius: 14px; padding: 30px 26px; display: flex; flex-direction: column; gap: 14px; background: #fff; }
@@ -401,6 +407,24 @@
             </a>
           </div>
         </article>
+      </div>
+      <div class="promise" id="promise">
+        <h3>Our promise</h3>
+        <p class="sub">The same rules for every Arauza app, today and in every future update.</p>
+        <div class="promise-grid">
+          <div class="check">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#13294B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/></svg>
+            <div><h4>Read-only</h4><p>Our apps look, they don't touch. They never change your settings, files or accounts. You decide what to fix.</p></div>
+          </div>
+          <div class="check">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#13294B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 9l6 6M15 9l-6 6"/></svg>
+            <div><h4>No data collected</h4><p>No sign-up with us, no tracking, no analytics. Your results stay on your device and are never sent to us.</p></div>
+          </div>
+          <div class="check">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#13294B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            <div><h4>Official stores only</h4><p>Get our apps only from the Microsoft Store and Google Play, where they're checked and update automatically. We never offer direct downloads.</p></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>

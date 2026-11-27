@@ -45,7 +45,7 @@
 <main>
   <div class="wrap">
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated November 24, 2026</p>
+    <p class="updated">Last updated November 26, 2026</p>
     <p class="lead">Short version: our checkup apps collect nothing and send nothing to us. For our in-person and remote services, we only use your information to do the job you asked for.</p>
 
     <h2>Arauza PC Security Checkup (Windows app)</h2>
@@ -87,6 +87,13 @@
       <li>The app talks only to Microsoft (login.microsoftonline.com and graph.microsoft.com). Nothing is sent to Arauza Tech Security, and the app does not use analytics or tracking.</li>
       <li>The sign-in token is kept in memory only while the app is open and is not saved to disk. Results stay on your computer unless you choose "Save report", which saves the report only where you choose.</li>
       <li>Your organization can remove the app's access at any time in the Microsoft Entra admin center under Enterprise applications.</li>
+    </ul>
+
+    <h2>Arauza Email Security Checkup (Windows app)</h2>
+    <ul>
+      <li>You type an email domain (for example yourcompany.com). The app looks up that domain's public DNS records (MX, SPF, DKIM, DMARC and MTA-STS) through your PC's normal internet connection. These are the same public records every mail server in the world reads.</li>
+      <li>No sign-in is needed, and the app never connects to your mailbox or reads any email.</li>
+      <li>Nothing is sent to Arauza Tech Security. The app uses no analytics or tracking, and results stay on your PC unless you choose to save a report.</li>
     </ul>
 
     <h2>Arauza File Checker (Windows app)</h2>

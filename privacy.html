@@ -45,7 +45,7 @@
 <main>
   <div class="wrap">
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated November 26, 2026</p>
+    <p class="updated">Last updated November 27, 2026</p>
     <p class="lead">Short version: our checkup apps collect nothing and send nothing to us. For our in-person and remote services, we only use your information to do the job you asked for.</p>
 
     <h2>Arauza PC Security Checkup (Windows app)</h2>
@@ -93,6 +93,13 @@
     <ul>
       <li>You type an email domain (for example yourcompany.com). The app looks up that domain's public DNS records (MX, SPF, DKIM, DMARC and MTA-STS) through your PC's normal internet connection. These are the same public records every mail server in the world reads.</li>
       <li>No sign-in is needed, and the app never connects to your mailbox or reads any email.</li>
+      <li>Nothing is sent to Arauza Tech Security. The app uses no analytics or tracking, and results stay on your PC unless you choose to save a report.</li>
+    </ul>
+
+    <h2>Arauza Website Security Checkup (Windows app)</h2>
+    <ul>
+      <li>You type a website address. The app opens that website's home page and its /.well-known/security.txt file the same way a web browser does, and reads the secure connection details, the certificate and the response headers. It doesn't fill in forms, log in, or scan other pages or ports.</li>
+      <li>The website you check sees a normal visit from your computer, as it would from your web browser.</li>
       <li>Nothing is sent to Arauza Tech Security. The app uses no analytics or tracking, and results stay on your PC unless you choose to save a report.</li>
     </ul>
 
